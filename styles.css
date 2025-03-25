@@ -1,0 +1,29 @@
+/* Keeping minimal base styles, most now in mobile.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: #8EC6E6;
+    color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(142, 198, 230, 0.7) 0%, rgba(142, 198, 230, 0.4) 70%);
+    z-index: -1;
+}
+
+/* All other styles moved to mobile.css for mobile-first approach */
